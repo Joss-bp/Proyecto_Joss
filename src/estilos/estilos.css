@@ -1,0 +1,21 @@
+body{
+    background: rgb(247, 226, 230);
+    color: rgb(245, 96, 96);
+    text-align: center;
+
+}
+
+#gato {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+
+}
+
+.celda{
+ width: 95px;
+ height: 95px;
+ border: 2px solid rgb(225, 240, 231);
+ background-color: rgb(255, 147, 147);
+}
