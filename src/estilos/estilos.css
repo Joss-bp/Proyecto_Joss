@@ -1,21 +1,59 @@
 body{
-    background: rgb(247, 226, 230);
-    color: rgb(245, 96, 96);
+    
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background:linear-gradient(-45deg, #e99f9f, #bbeef1)
 
 }
 
-#gato {
+#tablero {
     justify-content: center;
     display: grid;
+    gap: 5px;
+    margin: 20px 0;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
 
 }
 
-.celda{
+.cell{
  width: 95px;
  height: 95px;
- border: 2px solid rgb(225, 240, 231);
- background-color: rgb(255, 147, 147);
+ border: 2px solid rgb(0, 0, 0);
+ background-color: #ffb3b3;
+ border-radius: 14px;
+ font-size: 70px;
 }
+
+#mensaje{
+padding: 20px;
+}
+
+#resetbtn{
+    /* Estilo básico del botón */
+    padding: 12px 24px;
+    background-color: #bbeef1;
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    border: none;
+    border-radius 8px;
+    cursor: pointer;
+    transition : all 0.3s ease;
+    text-align: center;
+}
+
+/* Efecto al pasar el cursor (hover) */
+#resetbtn:hover {
+    background-color: #fd058d;
+    transform: scale(1.05); /* Pequeña animación al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de profundidad */
+}
+
+/* Efecto al hacer clic (active) */
+#resetbtn:active {
+    background-color: #e99f9f;
+    transform: scale(0.98); /* Reduce un poco el tamaño para dar la sensación de presión */
+}
+
